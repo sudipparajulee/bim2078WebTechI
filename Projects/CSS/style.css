@@ -1,0 +1,43 @@
+.redbutton{
+    border: none;
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.bluebutton{
+    border: none;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+input[type='text']{
+    background-color: green;
+}
+
+.mylist{
+    list-style-type: none;
+}
+
+.myheading{
+    color: white;
+    color: green;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid red;
+   }
+
+   
+
+   .text-center{
+    text-align: center;
+   }
+
+   .text-right{
+    text-align: right;
+   }
