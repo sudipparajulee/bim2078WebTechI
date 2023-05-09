@@ -41,3 +41,11 @@ input[type='text']{
    .text-right{
     text-align: right;
    }
+
+   .redtext{
+    color: red;
+   }
+
+   .bg-green{
+    background-color: green;
+   }
