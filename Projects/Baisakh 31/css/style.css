@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+}
+
+.myimg img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.mydiv{
+    background-color: blue;
+    color: white;
+    width: 20%;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.service-heading{
+    text-align: center;
+}
