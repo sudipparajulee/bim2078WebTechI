@@ -1,0 +1,31 @@
+body{
+    font-family: sans-serif;
+}
+
+.service-container h1{
+    text-align: center;
+}
+
+.outer-div{
+    width: 33.33%;
+    float: left;
+}
+
+.inner-div{
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-red{
+    background-color: red;
+}
