@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+}
+
+.pricing-container h2{
+    text-align: center;
+}
+
+.outer-div{
+    width: 33.33%;
+    float: left;
+}
+
+.inner-div{
+    margin: 10px;
+    /* background-color: rgb(33, 30, 92); */
+    /* background-color: rgba(33, 30, 92, 0.5); */
+    background-color: #294597;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(71, 71, 71);
+}
