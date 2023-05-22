@@ -6,8 +6,13 @@
 
 .mytext{
     position: relative;
-    left: 50px;
+    /* left: 50px; */
     top: 15px;
+}
+
+.pricing{
+    background-color: red;
+    overflow: hidden;
 }
 
 .outer-div{
@@ -31,4 +36,20 @@
     top: 0;
     right: 0;
     margin: 0;
+}
+
+.navbar{
+    background-color: blue;
+    padding: 10px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a{
+    color: white;
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+    text-decoration: none;
 }
