@@ -1,0 +1,30 @@
+.mydiv{
+    display: flex;
+    height: 300px;
+    background-color: aqua;
+    /* justify-content: center; */
+    /* justify-content: end; */
+    justify-content: start;
+    /* align-items: center; */
+    /* align-items: end; */
+    align-items: start;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    background-color: blue;
+}
+
+.menu img{
+    height: 50px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
