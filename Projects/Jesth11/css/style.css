@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar img{
+    width: 200px;
+    background-color: white;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.service-section h1{
+    text-align: center;
+    padding: 10px 100px;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 100px;
+    gap: 15px;
+}
+
+.services{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(190, 174, 174);
+}
