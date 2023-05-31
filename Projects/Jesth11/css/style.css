@@ -11,6 +11,7 @@ body{
     padding: 0px 50px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 .navbar img{
@@ -25,8 +26,17 @@ body{
     margin: 10px;
 }
 
+.relative{
+    position: relative;
+    z-index: 9;
+    /* visibility: hidden; */
+    display: none;
+}
+
 .banner img{
     width: 100%;
+    /* display: none; */
+    visibility: hidden;
 }
 
 .service-section h1{

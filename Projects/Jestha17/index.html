@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Content</title>
+        <style>
+            p::after{
+                content: ' world';
+            }
+
+            p::before{
+                content: 'BIM ';
+            }
+
+            a::after{
+                content: " site "attr(href)"";
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello</p>
+
+        <a href="https://lict.edu.np">Click to view</a>
+    </body>
+</html>
