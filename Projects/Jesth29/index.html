@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Form Example</title>
+    </head>
+    <body>
+        <p id="mytext"></p>
+        <input type="text" id="username" placeholder="Enter Username">
+        <button onclick="myFunction()">Click Here</button>
+        <button onclick="showUsername()">Show Username</button>
+        <script>
+            function myFunction()
+            {
+                document.getElementById('mytext').innerHTML = "Enter Username in following box";
+                document.getElementById('username').value = "uname123";
+            }
+
+            function showUsername()
+            {
+                var uname = document.getElementById('username').value;
+                document.getElementById('mytext').innerHTML = uname;
+                document.getElementById('mytext').style.color = "red";
+                document.getElementById('mytext').style.backgroundColor = "yellow";
+            }
+        </script>
+    </body>
+</html>
