@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>My Title</title>
+    </head>
+    <body>
+        <form action="" onsubmit="return validate()">
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+
+            <input type="submit" value="Login">
+        </form>
+        <script>
+            function validate()
+            {
+                var uname = document.getElementById('username').value;
+                var pass = document.getElementById('password').value;
+
+                if(uname == "" || pass == "")
+                {
+                    alert('Fields cannot be empty');
+                    return false;
+                }
+
+                if(uname.length < 5 || pass.length < 5)
+                {
+                    alert('Username and Password must be at least 5 character long');
+                    return false;
+                }
+
+                if(uname == pass)
+                {
+                    alert('Username and Password cannot be same');
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
