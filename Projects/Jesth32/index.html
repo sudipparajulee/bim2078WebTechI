@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>My Title</title>
+    </head>
+    <body>
+        <h2>Marks Calculator</h2>
+        <span>English</span><input type="number" id="eng">
+        <br><br>
+        <span>Science</span><input type="number" id="sci">
+        <br><br>
+        <span>Maths</span><input type="number" id="math">
+        <br><br>
+        <button onclick="result()">Calculate Result</button>
+        <h2 id="result"></h2>
+        <script>
+            function result()
+            {
+                var eng = document.getElementById('eng').value;
+                var sci = document.getElementById('sci').value;
+                var math = document.getElementById('math').value;
+                if(sci == "" || eng == "" || math == "")
+                {
+                    alert('The values cannot be null');
+                }
+                else
+                {
+                    eng = parseInt(eng);
+                    sci = parseInt(sci);
+                    math = parseInt(math);
+
+                    var total = eng+sci+math;
+                    var percent = total/300 * 100;
+                    document.getElementById('result').innerHTML = "The result is " + percent + "%";
+                }
+
+            }
+        </script>
+    </body>
+</html>
