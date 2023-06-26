@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Current Time</title>
+    </head>
+    <body>
+        <h1 id="clock"></h1>
+
+        <script>
+            var clockElement = document.getElementById('clock');
+            function updateClock() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            var formattedTime = check(hours)+ ':'+check(minutes)+':'+check(seconds);
+
+            
+
+            // var formattedTime = padNumber(hours) + ':' + padNumber(minutes) + ':' + padNumber(seconds);
+            clockElement.innerHTML = formattedTime;
+            }
+
+
+            function check(x){
+                if(x<10)
+                {
+                    return '0'+x;
+                }
+                else
+                {
+                    return x;
+                }
+            }
+
+            // Function to pad a number with leading zeros
+            // function padNumber(number) {
+            // return number.toString().padStart(2, '0');
+            // }
+
+            updateClock();
+            setInterval(updateClock, 1000);
+
+        </script>
+    </body>
+</html>
