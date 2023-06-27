@@ -1,0 +1,23 @@
+.service-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.service{
+    background-color: rgb(47, 35, 156);
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .service-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .service-container{
+        grid-template-columns: 1fr;
+    }
+}
