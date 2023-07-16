@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Regex Email</title>
+    </head>
+    <body>
+        
+
+        <script>
+            var email = "sldfj@gmail.com";
+            var phone = "9812345678";
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var patternphone = /^98[\d]{8}$/;
+            var check = pattern.test(email);
+            var checkphone = patternphone.test(phone);
+            if(check == false){
+                alert('Invalid email address');
+            }
+            if(checkphone == false)
+            {
+                alert('Invalid phone number');
+            }
+        </script>
+    </body>
+</html>

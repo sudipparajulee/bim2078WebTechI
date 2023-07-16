@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Popup box</title>
+        <style>
+            .mydiv{
+                position: fixed;
+                /* top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0; */
+                inset: 0;
+                background-color: rgb(12, 12, 167,0.4);
+                backdrop-filter: blur(10px);
+                display: none;
+            }
+
+            .dialog-content{
+                background-color: white;
+                width: 50%;
+                margin: auto;
+                margin-top: 10%;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+            }
+
+            .closebtn{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: gray;
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="mybtn" onclick="show()">Show Popup</button>
+        <div class="mydiv" id="mydiv">
+            <div class="dialog-content">
+                <h1>Hello this is a dialog box</h1>
+                <a class="closebtn" onclick="hide()">X</a>
+            </div>
+        </div>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+        <h1>This is heading 1</h1>
+
+        <script>
+
+            function show(){
+                document.getElementById('mydiv').style.display = 'block';
+            }
+
+            function hide()
+            {
+                document.getElementById('mydiv').style.display = 'none';
+            }
+
+            
+        </script>
+    </body>
+</html>
