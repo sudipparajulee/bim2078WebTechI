@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Question Answer</title>
+        <!-- Link for jquery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <p id="p1">this is paragraph p1</p>
+        <p id="p2">this is paragraph p2</p>
+
+        <!-- Script to handle events -->
+        <script>
+            $(document).ready(function(){
+                //if mouse is over p1
+                $("#p1").mouseover(function(){
+                    //change the text
+                    $("#p1").text("Oh No, Mouse have been detected!");
+                    //change color to red
+                    $("#p1").css({"color":"red"});
+                });
+                //if mouse is out
+                $("#p1").mouseout(function(){
+                    //change the text of p1
+                    $("#p1").text("Yay! Mouse have gone");
+                    //change color of p2 to green
+                    $("#p2").css({"color":"green"});
+                });
+            });
+        </script>
+    </body>
+</html>
