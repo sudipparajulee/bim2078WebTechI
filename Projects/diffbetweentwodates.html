@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>my title</title>
+    </head>
+    <body>
+        <!-- Calculate difference between two dates given by user  -->
+        <p>Enter the first date</p>
+        <input type="date" id="date1">
+        <p>Enter the second date</p>
+        <input type="date" id="date2">
+        <button onclick="calculateDifference()">Calculate difference</button>
+        <p id="p1"></p>
+
+        <!-- Script -->
+        <script>
+            //function to calculate difference between two dates
+            function calculateDifference(){
+                //get the first date
+                var date1 = document.getElementById('date1').value;
+                //get the second date
+                var date2 = document.getElementById('date2').value;
+                //convert the dates to milliseconds
+                var date1_ms = new Date(date1).getTime();
+                var date2_ms = new Date(date2).getTime();
+                //calculate the difference in milliseconds
+                var difference_ms = date2_ms - date1_ms;
+                //convert the difference in milliseconds and store in variable
+                var difference = Math.floor(difference_ms / (1000 * 60 * 60 * 24));
+                //display the difference
+                document.getElementById('p1').innerHTML = difference + " days";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Layout using div</title>
+        <style>
+            .container{
+                width: 500px;
+            }
+            .header, .menu, .footer{
+                border: 1px solid black;
+                margin: 4px;
+            }
+
+            .content{
+                border: none;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+            .content div{
+                border: 1px solid black;
+                margin: 4px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="menu">Navigation Menu</div>
+            <div class="content">
+                <div>Content</div>
+                <div>Main Content</div>
+                <div>Content</div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

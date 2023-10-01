@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Div box</title>
+        <style>
+            #mydiv{
+                width: 200px;
+                background-color: red;
+            }
+            /* for laptop */
+            @media only screen and (max-width: 1200px){
+                #mydiv{
+                    background-color: yellow;
+                }
+            }
+            /* for tablet  */
+            @media only screen and (max-width: 768px){
+                #mydiv{
+                    background-color: green;
+                }
+            }
+            /* for mobile */
+            @media only screen and (max-width: 480px){
+                #mydiv{
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mydiv">This div's background is red on desktop, yellow on laptop, green on tablet and blue on mobile device. </div>
+    </body>
+</html>
